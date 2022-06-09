@@ -20,8 +20,10 @@ BASE_DIR = "gs://download.magenta.tensorflow.org/models/music_vae/colab2"
 
 print('Installing dependencies...')
 #!apt-get update -qq && apt-get install -qq libfluidsynth1 fluid-soundfont-gm build-essential libasound2-dev libjack-dev
-!pip install -q pyfluidsynth
-!pip install -qU magenta
+#!
+pip install -q pyfluidsynth
+#!
+pip install -qU magenta
 
 # Hack to allow python to pick up the newly-installed fluidsynth lib.
 # This is only needed for the hosted Colab environment.
